@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>RevoU Wokrflow</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+      <div class="logo"></div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Profile</a></li>
+          <li><a href="#">Portofolio</a></li>
+          <li><a href="#">Message Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="Beranda">
+      <h3>Hi Kakek, Welcome to Website</h3>
+      <p>Ini adalah halaman Website latihan</p>
+    </section>
+    
+    <section class="portofolio">
+      <h2>Our HeadQuarter</h2>
+      <div class="porto-grid">
+        <div class="porto-head">
+          <div class="circle"></div>
+          <p>Jakarta</p>
+        </div>
+        <div class="porto-head">
+          <div class="circle"></div>
+          <p>Bandung</p>
+        </div>
+        <div class="porto-head">
+          <div class="circle"></div>
+          <p>Depok</p>
+        </div>
+      </div>
+    </section>
+    
+    <section "messages-us">
+      <h2> Message Us</h2>
+      <form>
+        <div class="form-row">
+                <div class="form-item">
+                  <label for="nama">Name</label>
+                  <input type="text" id="nama" placeholder ="Nama">
+                </div>
+                <div class="form-item">
+                  <label for="tanggal-lahir">Tanggal Lahir</label>
+                  <input type="date" id="tanggal-lahir">
+                </div>
+            </div>
+            
+      <div class="form-row">
+        <div class="form-item">
+          <label for="gender">Jenis Kelamin</label>
+        <div class="gender-choice">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Laki Laki</label>
+          
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Perempuan</label>
+          </div>
+        </div>
+        
+        <div class="form-item">
+          <label for="messages">Pesan</label>
+          <textarea id="messages" placeholder="pesan"></textarea>
+        </div>
+      </div>
+      
+      <button class="kirim" type="kirim">Submit</button>
+    </form>
+  </section>
+  
+  <footer class="footer">
+    <p>Created By RevoU</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
