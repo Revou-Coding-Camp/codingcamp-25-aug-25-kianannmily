@@ -1,94 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>RevoU Wokrflow</title>
+  <title>Jaya Abadi Company</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <header>
-      <div class="logo"></div>
+  <div class="modal-nama" id="modal-nama">
+    <div class="modal-content">
+      <h3>Selamat Datang di Jaya Abadi Company</h3>
+      <p>Siapa nama Anda?</p>
+      <form id="set-name">
+        <input type="text" id="input-nama" placeholder="Ketik nama Anda..." required>
+        <button type="submit" id="nama-set">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <img src="/assets/logo.png" alt="Jaya Abadi Logo" class="logo">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Our Profile</a></li>
-          <li><a href="#">Portofolio</a></li>
-          <li><a href="#">Message Us</a></li>
+          <li><a href="#beranda">Home</a></li>
+          <li><a href="#our-profile">Our Profile</a></li>
+          <li><a href="#portofolio">Portofolio</a></li>
+          <li><a href="#messages-us">Message Us</a></li>
         </ul>
       </nav>
-    </header>
-    
-    <section class="beranda">
-      <div class="backgound-image">
-      <h3>Hi Yusuf, Welcome to Website</h3>
-      <p>Ini adalah halaman Website latihan</p>
-      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="beranda" id="beranda">
+      <h2>Hi <span id="selamat-datang"></span>, Welcome to Jaya Abadi Company</h2>
+      <p>Jaya Abadi Company.</p>
+      <div class="background"></div>
     </section>
-    
-    <section class="portofolio">
+
+    <section class="portofolio" id="portofolio">
       <h2>Our Headquarter</h2>
       <div class="porto-grid">
         <div class="porto-head">
-          <div class="circle"></div>
+          <div class="circle" style="background-image: url(/assets/jakarta.jpg);"></div>
           <p>Jakarta</p>
         </div>
         <div class="porto-head">
-          <div class="circle"></div>
+          <div class="circle" style="background-image: url(/assets/bandung.jpg);"></div>
           <p>Bandung</p>
         </div>
         <div class="porto-head">
-          <div class="circle"></div>
+          <div class="circle" style="background-image: url(/assets/depok.jpg);"></div>
           <p>Depok</p>
         </div>
       </div>
-    </section>
-    
-    <section class="messages-us">
-      <h2> Message Us</h2>
-      <form>
-        <div class="form-row">
-                <div class="form-item">
-                  <label for="nama">Name</label>
-                  <input type="text" id="nama" placeholder ="Nama">
-                </div>
-                <div class="form-item">
-                  <label for="tanggal-lahir">Tanggal Lahir</label>
-                  <input type="date" id="tanggal-lahir">
-                </div>
-            </div>
-            
-      <div class="form-row">
-        <div class="form-item">
-          <label for="gender">Jenis Kelamin</label>
-        <div class="gender-choice">
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Laki Laki</label>
-          
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Perempuan</label>
-          </div>
+      <h2 style="margin-top:2rem;">Our Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Website Inventory</h3>
+          <p>Sistem manajemen inventaris berbasis web untuk perusahaan retail.</p>
+          <span class="project-tag">Web App</span>
         </div>
-        
-        <div class="form-item">
-          <label for="messages">Pesan</label>
-          <textarea id="messages" placeholder="pesan"></textarea>
+        <div class="project-card">
+          <h3>Mobile Absensi</h3>
+          <p>Aplikasi absensi karyawan berbasis Android dengan QR Code.</p>
+          <span class="project-tag">Mobile App</span>
+        </div>
+        <div class="project-card">
+          <h3>IoT Monitoring</h3>
+          <p>Solusi monitoring suhu dan kelembaban gudang secara real-time.</p>
+          <span class="project-tag">IoT</span>
+        </div>
+        <div class="project-card">
+          <h3>Company Profile</h3>
+          <p>Website profil perusahaan dengan desain modern dan interaktif.</p>
+          <span class="project-tag">Web Design</span>
         </div>
       </div>
-      
-      <button class="kirim" type="kirim">Submit</button>
-    </form>
-  </section>
-  
-  <section class="our-profile">
-    
-  </section>
-  
-  <footer class="footer">
-    <p>Created By RevoU</p>
+    </section>
+
+    <section class="our-profile" id="our-profile">
+      <h2>Our Profile</h2>
+      <p>Jaya Abadi Company adalah perusahaan yang bergerak di bidang teknologi dan inovasi, berpusat di Indonesia.</p>
+    </section>
+
+    <section class="messages-us" id="messages-us">
+      <h2>Message Us</h2>
+      <form id="message-us">
+        <div class="form-row">
+          <div class="form-item">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" placeholder="Nama" required>
+          </div>
+          <div class="form-item">
+            <label for="tanggal-lahir">Tanggal Lahir</label>
+            <input type="date" id="tanggal-lahir" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-item">
+            <label>Jenis Kelamin</label>
+            <div class="gender-choice">
+              <input type="radio" id="male" name="gender" value="male" required>
+              <label for="male">Laki-laki</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Perempuan</label>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" placeholder="Pesan Anda..." required></textarea>
+          </div>
+        </div>
+        <button class="kirim" type="submit">Kirim</button>
+      </form>
+      <div class="output">
+        <p><strong>Current Time:</strong> <span id="out-time"></span></p>
+        <p><strong>Nama:</strong> <span id="out-name"></span></p>
+        <p><strong>Tanggal Lahir:</strong> <span id="out-dob"></span></p>
+        <p><strong>Jenis Kelamin:</strong> <span id="out-gender"></span></p>
+        <p><strong>Pesan:</strong> <span id="out-messages"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Created by Yusuf</p>
   </footer>
   <script src="js/script.js"></script>
 </body>
