@@ -4,18 +4,15 @@
   padding: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
 }
-
 body {
   background-color: #f4f6f8;
   color: #222;
 }
-
 header {
   background: #2c3e50;
   color: #fff;
   padding: 0.5rem 0;
 }
-
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -23,19 +20,16 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
 .logo {
   width: 75px;
   height: 75px;
   border-radius: 50%;
 }
-
 nav ul {
   display: flex;
   list-style: none;
   gap: 1rem;
 }
-
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -44,12 +38,10 @@ nav ul li a {
   transition: background 0.2s;
   text-align: center;
 }
-
 nav ul li a:hover,
 nav ul li a.active {
   background: #34495e;
 }
-
 main {
   max-width: 1200px;
   margin: 2rem auto;
@@ -58,16 +50,13 @@ main {
   box-shadow: 0 2px 8px rgba(44,62,80,0.08);
   padding: 2rem;
 }
-
 .beranda {
   margin-bottom: 2rem;
 }
-
 .beranda h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-
 .background {
   background-image: url('https://c0.wallpaperflare.com/preview/662/69/148/building-office-building-city-town.jpg');
   height: 300px;
@@ -76,26 +65,21 @@ main {
   border-radius: 8px;
   margin-top: 1rem;
 }
-
 .portofolio {
   margin-bottom: 2rem;
 }
-
 .portofolio h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
 .porto-grid {
   display: flex;
   gap: 2rem;
   justify-content: center;
 }
-
 .porto-head {
   text-align: center;
 }
-
 .circle {
   width: 80px;
   height: 80px;
@@ -105,36 +89,29 @@ main {
   border: 3px solid #34495e;
   justify-items: center;
 }
-
 .our-profile {
   margin-bottom: 2rem;
 }
-
 .messages-us {
   margin-bottom: 2rem;
 }
-
 .messages-us h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
 .form-row {
   display: flex;
   gap: 2rem;
   margin-bottom: 1rem;
 }
-
 .form-item {
   flex: 1;
 }
-
 .form-item label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
-
 input[type="text"],
 input[type="date"],
 textarea {
@@ -145,22 +122,18 @@ textarea {
   margin-bottom: 0.5rem;
   font-size: 1rem;
 }
-
 textarea {
   min-height: 60px;
   resize: vertical;
 }
-
 .gender-choice {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-
 .gender-choice input[type="radio"] {
   margin-right: 0.25rem;
 }
-
 button.kirim,
 button#nama-set {
   background: #2c3e50;
@@ -172,12 +145,10 @@ button#nama-set {
   font-size: 1rem;
   transition: background 0.2s;
 }
-
 button.kirim:hover,
 button#nama-set:hover {
   background: #34495e;
 }
-
 .output {
   margin-top: 1.5rem;
   background: #f4f6f8;
@@ -185,7 +156,6 @@ button#nama-set:hover {
   border-radius: 5px;
   box-shadow: 0 1px 4px rgba(44,62,80,0.05);
 }
-
 footer {
   background: #2c3e50;
   color: #fff;
@@ -194,7 +164,6 @@ footer {
   margin-top: 2rem;
   border-radius: 0 0 8px 8px;
 }
-
 .modal-nama {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -204,7 +173,6 @@ footer {
   justify-content: center;
   z-index: 9999;
 }
-
 .modal-content {
   background: #fff;
   padding: 2rem 2.5rem;
@@ -212,14 +180,12 @@ footer {
   box-shadow: 0 2px 16px rgba(44,62,80,0.15);
   text-align: center;
 }
-
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
 }
-
 .project-card {
   background: #f9fafb;
   border: 1px solid #e1e4e8;
@@ -228,23 +194,19 @@ footer {
   box-shadow: 0 1px 4px rgba(44,62,80,0.05);
   transition: box-shadow 0.2s;
 }
-
 .project-card:hover {
   box-shadow: 0 4px 16px rgba(44,62,80,0.12);
 }
-
 .project-card h3 {
   margin-bottom: 0.5rem;
   color: #2c3e50;
   font-size: 1.15rem;
 }
-
 .project-card p {
   margin-bottom: 0.75rem;
   color: #555;
   font-size: 0.98rem;
 }
-
 .project-tag {
   display: inline-block;
   background: #2c3e50;
@@ -254,7 +216,6 @@ footer {
   font-size: 0.85rem;
   font-weight: 500;
 }
-
 @media (max-width: 768px) {
   main {
     padding: 1rem;
